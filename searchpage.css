@@ -1,0 +1,51 @@
+body {
+	background-color: #3d3d3d; /*Dark mode*/
+}
+
+.title {
+	color: #56b2e8; /*This is a light blue*/
+	font-family: "Neo Latina", Courier, monospace;
+	font-size: 500%;
+}
+
+.subtitle {
+	color: white;
+	font-family: "Agency FB", Courier, monospace;
+	font-size: 225%;
+}
+
+h1 {
+	color: #56b2e8;
+	font-family: "Neutra Display Bold", Courier, monospace;
+	font-size: 175%;
+}
+
+.lyrics {
+	color: white;
+	font-family: "Agency FB", Courier, monospace;
+	font-size: 125%;
+}
+
+.text {
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
+}
+
+.fade-in {
+	animation: fadeIn ease 5s;
+	-webkit-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+.indent {
+	margin-left: 80px;
+}

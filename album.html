@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>AmpliWave</title>
+<link rel="stylesheet" href="searchpage.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="spotify_bundle.js"></script>
+<script src="youtube.js"></script>
+</head>
+
+<body>
+<a href="ampliwave.html">
+<img src="logo (2).png" alt="Logo" width="100" height="100">
+</a>
+<div class="fade-in">
+<div class="indent">
+<br>
+<br>
+<br>
+<br>
+<br>
+<script>
+var url_string = window.location.href;
+var url = new URL(url_string);
+var album = url.searchParams.get("album");
+load_album(album);
+inputArtist(album);
+</script>
+<div id="album_art">
+</div>
+<br>
+<br>
+<div class="title">
+<div id="albumname">
+</div>
+</div>
+<div class="subtitle"> 
+<div id="album_artist">
+</div>
+</div>
+<h1>
+<div id="album_date">
+</div>
+<div id="track_num">
+</div>
+</h1>
+<div id="album_url">
+</div>
+<h1>Songs on This Album:</h1>
+<div class="lyrics">
+<div id="album_tracks">
+</div>
+</div>
+
+</html>
