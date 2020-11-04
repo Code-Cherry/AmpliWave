@@ -7,7 +7,7 @@ body {
 	position: absolute;
 	height: 200px;
 	width: 400px;
-	top: 35%;
+	top: 28.5%;
 	left: 50%;
 	margin-top: -175px;
 	margin-left: -200px;
@@ -23,6 +23,12 @@ body {
 	color: white;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 125%;
+}
+
+.text {
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 100%;
 }
 
 .search input[type=text] {
