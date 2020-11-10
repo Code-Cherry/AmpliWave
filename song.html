@@ -7,8 +7,9 @@
 <link rel="stylesheet" href="searchpage.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="spotify_bundle.js"></script>
-<script src="bundle3.js"></script>
+<script src="bundle4.js"></script>
 <script src="youtube.js"></script>
+<script src="textspeech.js" defer></script>
 </head>
 
 <body>
@@ -19,14 +20,16 @@
 <a href="ampliwave.html">
 <img src="back.png" alt="Back Arrow" width="100" height="100">
 </a>
-
 <div class="fade-in">
 <div class="indent">
 <br>
 <br>
-<br>
-<br>
-<br>
+<div class="text"> 
+Click the buttons below to activate text to speech.
+</div>
+<input type="image" src="play.png" id=play width="100" height="100"/>&nbsp;
+<input type="image" src="pause.png" id=pause width="100" height="100"/> &nbsp;
+<input type="image" src="stop.png" id=stop width="100" height="100"/>
 <div id="art">
 </div>
 <br>
@@ -43,6 +46,7 @@ var url = new URL(url_string);
 var song = url.searchParams.get("song");
 load_information(song);
 inputArtist(song, 1);
+printLyrics(song);
 </script>
 </div>
 <div id="album">
@@ -54,7 +58,7 @@ inputArtist(song, 1);
 <div id="tracknum">
 </div>
 </h1>
-<div id="play">
+<div id="playsong">
 </div>
 <div id="video">
 </div>

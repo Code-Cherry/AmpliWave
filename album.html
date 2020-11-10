@@ -8,6 +8,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="spotify_bundle.js"></script>
 <script src="youtube.js"></script>
+<script src="textspeech.js" defer></script>
 </head>
 
 <body>
@@ -22,9 +23,18 @@
 <div class="indent">
 <br>
 <br>
+<div class="text"> 
+Click the buttons below to activate text to speech.
+</div>
+<input type="image" src="play.png" id=play width="100" height="100"/>&nbsp;
+<input type="image" src="pause.png" id=pause width="100" height="100"/> &nbsp;
+<input type="image" src="stop.png" id=stop width="100" height="100"/>
+<div id="album_art">
+</div>
 <br>
 <br>
-<br>
+<div class="title">
+<div id="albumname">
 <script>
 var url_string = window.location.href;
 var url = new URL(url_string);
@@ -32,12 +42,6 @@ var album = url.searchParams.get("album");
 load_album(album);
 inputArtist(album);
 </script>
-<div id="album_art">
-</div>
-<br>
-<br>
-<div class="title">
-<div id="albumname">
 </div>
 </div>
 <div class="subtitle"> 
