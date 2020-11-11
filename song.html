@@ -45,6 +45,8 @@ var url_string = window.location.href;
 var url = new URL(url_string);
 var song = url.searchParams.get("song");
 load_information(song);
+inputArtist(song, 1);
+printLyrics(song);
 </script>
 </div>
 <div id="album">
