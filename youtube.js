@@ -27,7 +27,8 @@ $(document).ready(function() {
      //input song, artist, or album (change so that it takes input)
     var videosList;
     var releaseList;
-	var videoId;
+    var videoId;
+    var idsList; 
 
 
     //var artist = '';
@@ -74,6 +75,8 @@ $(document).ready(function() {
             document.write("<br>Song: " + getSong(info) + "</br>");*/
             
             videosList = displayTen(data);
+            idsList = getVideoIds(data);
+            console.log(idsList);
 
             /*for(var i = 0; i < videosList.length; i++) {
                 document.write("<br>" + videosList[i] + "</br>");
@@ -83,7 +86,8 @@ $(document).ready(function() {
 			
 			var output1 = document.getElementById("10");
 			for (var i = 0; i < 10; i++) {
-				output1.innerHTML += videosList[i]+"<br>Released on "+releaseList[i]+"<br><br>";
+                output1.innerHTML += "<a target=\"_blank\" href=\"https://www.youtube.com/watch?v=" + idsList[i] + "\">" + videosList[i] + "</a><br>Released on " + releaseList[i] + "<br><br>";
+                //output1.innerHTML += videosList[i] + "<br>Released on " + releaseList[i] + "<br><br>";
 			}
 			
 			//var output2 = document.getElementById("video");
@@ -128,7 +132,17 @@ $(document).ready(function() {
             //console.log(info);
 		})
         return videos;
-	}
+    }
+    
+    function getVideoIds(data) {
+        var ids = [];
+        $.each(data.items, function(i, item) {
+            var info = item.id.videoId;
+            ids.push(info);
+            //console.log(info);
+		})
+        return ids;
+    }
 	
 	function displayVideo(data) {
         var id;
