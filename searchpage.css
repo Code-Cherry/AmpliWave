@@ -15,7 +15,7 @@ body {
 
 .title {
 	color: #56b2e8; /*This is a light blue*/
-	font-family: "Neo Latina", Courier, monospace;
+	font-family: "Neutra Display Bold", Courier, monospace;
 	font-size: 500%;
 }
 
@@ -55,7 +55,7 @@ a:link {
 }
 
 a:visited {
-  color: #56b2e8;
+  color: white;
   background-color: transparent;
   text-decoration: underline;
 }
