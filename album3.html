@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>AmpliWave</title>
+<link rel="stylesheet" href="searchpage.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="spotify_bundle.js"></script>
+<script src="youtube.js"></script>
+<script src="textspeech.js" defer></script>
+<link rel="icon" href="logo (2).png">
+</head>
+
+<body>
+<a href="ampliwave.html">
+<img src="logo (2).png" alt="Logo" width="100" height="100">
+</a>
+<br>
+<a href="ampliwave.html">
+<img src="back.png" alt="Back Arrow" width="100" height="100">
+</a>
+<div class="fade-in">
+<div class="indent">
+<div id="redirect">
+</div>
+<div class="text"> 
+Click the buttons below to activate text to speech.
+</div>
+<input type="image" src="play.png" id=play width="100" height="100"/>&nbsp;
+<input type="image" src="pause.png" id=pause width="100" height="100"/> &nbsp;
+<input type="image" src="stop.png" id=stop width="100" height="100"/>
+<div id="album_art">
+</div>
+<br>
+<br>
+<div class="title">
+<div id="albumname">
+<script>
+var url_string = window.location.href;
+var url = new URL(url_string);
+var album = url.searchParams.get("album");
+load_album(album, 2);
+inputArtist(album);
+</script>
+</div>
+</div>
+<div class="subtitle"> 
+<div id="album_artist">
+</div>
+</div>
+<h1>
+<div id="album_date">
+</div>
+<div id="track_num">
+</div>
+</h1>
+<div id="album_url">
+</div>
+<h1>Songs on This Album:</h1>
+<div class="lyrics">
+<div id="album_tracks">
+</div>
+</div>
+</div>
+<a href="ampliwave.html">
+<img src="back.png" alt="Back Arrow" width="100" height="100">
+</a>
+</html>

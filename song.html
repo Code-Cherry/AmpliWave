@@ -23,6 +23,8 @@
 </a>
 <div class="fade-in">
 <div class="indent">
+<div id="redirect">
+</div>
 <div class="text"> 
 Click the buttons below to activate text to speech.
 </div>
@@ -38,14 +40,14 @@ Click the buttons below to activate text to speech.
 </div>
 </div>
 <div class="subtitle"> 
-<div id="artist">
 <script>
 var url_string = window.location.href;
 var url = new URL(url_string);
 var song = url.searchParams.get("song");
-load_information(song);
+load_information(song, 0);
 inputArtist(song, 1);
 </script>
+<div id="artist">
 </div>
 <div id="album">
 </div>

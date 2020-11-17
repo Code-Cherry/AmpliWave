@@ -22,6 +22,8 @@
 </a>
 <div class="fade-in">
 <div class="indent">
+<div id="redirect">
+</div>
 <div class="text"> 
 Click the buttons below to activate text to speech.
 </div>
@@ -38,7 +40,7 @@ Click the buttons below to activate text to speech.
 var url_string = window.location.href;
 var url = new URL(url_string);
 var album = url.searchParams.get("album");
-load_album(album);
+load_album(album, 0);
 inputArtist(album);
 </script>
 </div>
