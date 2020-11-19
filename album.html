@@ -41,7 +41,7 @@ var url_string = window.location.href;
 var url = new URL(url_string);
 var album = url.searchParams.get("album");
 load_album(album, 0);
-inputArtist(album);
+inputArtist(album, 3);
 </script>
 </div>
 </div>
@@ -60,6 +60,11 @@ inputArtist(album);
 <h1>Songs on This Album:</h1>
 <div class="lyrics">
 <div id="album_tracks">
+</div>
+</div>
+<h1>This Album on YouTube:</h1>
+<div class="lyrics">
+<div id="20">
 </div>
 </div>
 </div>
