@@ -39259,7 +39259,7 @@ req.query({
 });
 
 req.headers({
-	"x-rapidapi-key": "1a08579687msh5aa71597c084941p1c45ebjsnff39ce8d8e78",
+	"x-rapidapi-key": "3ba7b87187msh79076b6c5f79d0fp16a058jsn3f5adfafbf83",
 	"x-rapidapi-host": "shazam.p.rapidapi.com",
 	"useQueryString": true
 });
